@@ -11,6 +11,16 @@ class Square():
     height = 0
 
     def __init__(self, *args, **kwargs):
+        """
+        Initializes a new instance of the class.
+
+        Args:
+            *args: Variable length argument list.
+            **kwargs: Arbitrary keyword arguments.
+
+        Returns:
+            None
+        """
         for key, value in kwargs.items():
             setattr(self, key, value)
 
@@ -19,9 +29,22 @@ class Square():
         return self.width * self.width
 
     def permiter_of_my_square(self):
+        """
+        Calculate the perimeter of a square.
+
+        Returns:
+            The perimeter of the square.
+
+        Parameters:
+            self (Square): An instance of the Square class.
+
+        """
         return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
+        """
+        Returns a string representation of the object.
+        """
         return "{}/{}".format(self.width, self.height)
 
 
