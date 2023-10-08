@@ -8,31 +8,19 @@ class Square():
     """ A class that defines a square
     """
 
-
     def __init__(self, width=0, height=0):
         """
-        Initializes a new instance of the class with the specified width and height.
+        Initializes a new instance of the class with the
+        specified width and height.
 
         Parameters:
-            width (int): The width of the object. Defaults to 0 if not provided.
-            height (int): The height of the object. Defaults to 0 if not provided.
+            width (int): The width of the object.
+                Defaults to 0 if not provided.
+            height (int): The height of the object.
+                Defaults to 0 if not provided.
         """
         self.width = width
         self.height = height
-
-    # def __init__(self, **kwargs):
-    #     """
-    #     Initializes a new instance of the class.
-
-    #     Args:
-    #         *args: Variable length argument list.
-    #         **kwargs: Arbitrary keyword arguments.
-
-    #     Returns:
-    #         None
-    #     """
-    #     for key, value in kwargs.items():
-    #         setattr(self, key, value)
 
     def area_of_my_square(self):
         """ Area of the square """
