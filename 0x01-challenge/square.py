@@ -1,22 +1,18 @@
 #!/usr/bin/python3
 
-class Square():
-    """ A class that defines a square
-    """
+class Square:
+    """A class that defines a square"""
 
-    def __init__(self, width=0, height=0):
+    def __init__(self, side_length=0):
         """
         Initializes a new instance of the class with the
-        specified width and height.
+        specified side length.
 
         Parameters:
-            width (int): The width of the object.
-                Defaults to 0 if not provided.
-            height (int): The height of the object.
+            side_length (int): The side length of the square.
                 Defaults to 0 if not provided.
         """
-        self.width = width
-        self.height = height
+        self.side_length = side_length
 
     def area_of_my_square(self):
         """
@@ -25,7 +21,7 @@ class Square():
         Returns:
             int: The area of the square.
         """
-        return self.width * self.width
+        return self.side_length * self.side_length
 
     def perimeter_of_my_square(self):
         """
@@ -33,22 +29,18 @@ class Square():
 
         Returns:
             The perimeter of the square.
-
-        Parameters:
-            self (Square): An instance of the Square class.
-
         """
-        return (self.width * 2) + (self.height * 2)
+        return 4 * self.side_length
 
     def __str__(self):
         """
         Returns a string representation of the object.
         """
-        return "{}/{}".format(self.width, self.height)
+        return "Side Length: {}".format(self.side_length)
 
 
 if __name__ == "__main__":
-    s = Square(width=12, height=9)
+    s = Square(side_length=12)
     print(s)
     print(s.area_of_my_square())
     print(s.perimeter_of_my_square())
