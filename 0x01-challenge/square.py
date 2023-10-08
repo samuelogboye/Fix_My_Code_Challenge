@@ -1,8 +1,4 @@
 #!/usr/bin/python3
-"""
-A  module that defines a square
-"""
-
 
 class Square():
     """ A class that defines a square
@@ -23,10 +19,15 @@ class Square():
         self.height = height
 
     def area_of_my_square(self):
-        """ Area of the square """
+        """
+        Calculates the area of a square.
+
+        Returns:
+            int: The area of the square.
+        """
         return self.width * self.width
 
-    def perimiter_of_my_square(self):
+    def perimeter_of_my_square(self):
         """
         Calculate the perimeter of a square.
 
@@ -50,4 +51,4 @@ if __name__ == "__main__":
     s = Square(width=12, height=9)
     print(s)
     print(s.area_of_my_square())
-    print(s.perimiter_of_my_square())
+    print(s.perimeter_of_my_square())
