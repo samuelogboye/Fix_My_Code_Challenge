@@ -36,7 +36,7 @@ class Square:
         """
         Returns a string representation of the object.
         """
-        return "Side Length: {}".format(self.side_length)
+        return "{}".format(self.side_length)
 
 
 if __name__ == "__main__":
