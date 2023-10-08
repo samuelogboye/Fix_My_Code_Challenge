@@ -10,7 +10,7 @@ class Square():
     width = 0
     height = 0
 
-    def __init__(self, *args, **kwargs):
+    def __init__(self, **kwargs):
         """
         Initializes a new instance of the class.
 
@@ -28,7 +28,7 @@ class Square():
         """ Area of the square """
         return self.width * self.width
 
-    def permiter_of_my_square(self):
+    def perimiter_of_my_square(self):
         """
         Calculate the perimeter of a square.
 
@@ -52,4 +52,4 @@ if __name__ == "__main__":
     s = Square(width=12, height=9)
     print(s)
     print(s.area_of_my_square())
-    print(s.permiter_of_my_square())
+    print(s.perimiter_of_my_square())
