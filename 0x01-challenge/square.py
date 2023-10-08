@@ -7,22 +7,32 @@ A  module that defines a square
 class Square():
     """ A class that defines a square
     """
-    width = 0
-    height = 0
 
-    def __init__(self, **kwargs):
+
+    def __init__(self, width=0, height=0):
         """
-        Initializes a new instance of the class.
+        Initializes a new instance of the class with the specified width and height.
 
-        Args:
-            *args: Variable length argument list.
-            **kwargs: Arbitrary keyword arguments.
-
-        Returns:
-            None
+        Parameters:
+            width (int): The width of the object. Defaults to 0 if not provided.
+            height (int): The height of the object. Defaults to 0 if not provided.
         """
-        for key, value in kwargs.items():
-            setattr(self, key, value)
+        self.width = width
+        self.height = height
+
+    # def __init__(self, **kwargs):
+    #     """
+    #     Initializes a new instance of the class.
+
+    #     Args:
+    #         *args: Variable length argument list.
+    #         **kwargs: Arbitrary keyword arguments.
+
+    #     Returns:
+    #         None
+    #     """
+    #     for key, value in kwargs.items():
+    #         setattr(self, key, value)
 
     def area_of_my_square(self):
         """ Area of the square """
