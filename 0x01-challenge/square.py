@@ -1,7 +1,12 @@
 #!/usr/bin/python3
 
 class Square():
-    """ A class that defines a square
+    """
+    A class representing a square shape.
+
+    Attributes:
+    - width: The width of the square.
+    - height: The height of the square.
     """
 
     def __init__(self, width=0, height=0):
