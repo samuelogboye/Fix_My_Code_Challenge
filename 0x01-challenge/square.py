@@ -37,10 +37,7 @@ class Square():
         Calculate the perimeter of a square.
 
         Returns:
-            The perimeter of the square.
-
-        Parameters:
-            self (Square): An instance of the Square class.
+            int: The perimeter of the square.
 
         """
         return (self.width * 2) + (self.height * 2)
